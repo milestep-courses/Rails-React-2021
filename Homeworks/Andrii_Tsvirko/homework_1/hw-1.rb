@@ -6,7 +6,7 @@ users = names.map { |user| { name: user, age: rand(7..78), hobbies: hobbies.samp
 
 users.each do |user|
   #  Adding key adult for all users
-  user[:adult] = user[:age] >= 18  ? true : false
+  user[:adult] = user[:age] >= 18
 
   # Всім, в кого менше 2х хобі, потрібно додати хоббі  football . Якщо таке хоббі вже є, додати любе нове для обраного юзера хоббі
   unique_hobbies = (user[:hobbies] | hobbies)
