@@ -21,7 +21,7 @@ end
 count_hobbies           = count_hobbies.sort_by {|_key, value| value}.reverse.to_h
 list_of_popular_hobbies = count_hobbies.keys.first(3)
 oldest_user             = users.find {|u| u[:age] == users_age.max }
-avg_age                 = users_age.inject(0) { |sum, el| sum + el} / users_age.size
+avg_age                 = users_age.sum / users_age.size
 adult_users             = users.find_all{ |user| user[:adult]}.map{|u| u[:name] }
 
 puts %{
