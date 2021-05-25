@@ -40,7 +40,7 @@ end
 
 adult_users = users.select {|user| user[:adult]}
 popular_hobbies = ((users.map {|user| user[:hobbies]}).flatten(1).inject(Hash.new(0)) { |h,v| h[v] += 1; h }).keys.to_a.slice(0, 3)
-avarage_age = users.reduce(0) {|result, current| result += current[:age] }
+avarage_age = (users.reduce(0) {|result, current| result += current[:age] }) / users.size
 oldest_user = users.max {|a,b| a[:age] <=> b[:age] }
 
 p "Names of adult users: #{adult_users}"
