@@ -36,6 +36,8 @@ https://eslint.org/docs/user-guide/getting-started
 
 https://prettier.io/docs/en/install.html
 
+git checkout 3baab26e
+
 Lifecycle methods
 https://habr.com/ru/post/358090/
 

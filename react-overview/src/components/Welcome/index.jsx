@@ -7,7 +7,7 @@ class Welcome extends Component {
   }
 
   componentDidMount() {
-    this.timerID = setInterval(() => this.tick(), 3000);
+    this.timerID = setInterval(() => this.tick(), 2000);
   }
 
   componentWillUnmount() {
