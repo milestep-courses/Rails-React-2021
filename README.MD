@@ -28,11 +28,14 @@ Virtual DOM - `библиотека react-dom создаёт в памяти в�
 производит различные вычисления и перерисовки и затем обновляет реальный DOM.
 VDOM - киллер-фича реакта`
 
-git checkout 77b7f59b
+git checkout bd1f51a2
 
 Install Prettier ans eslint
 
 https://eslint.org/docs/user-guide/getting-started
 
 https://prettier.io/docs/en/install.html
+
+Lifecycle methods
+https://habr.com/ru/post/358090/
 
