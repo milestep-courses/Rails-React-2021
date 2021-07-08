@@ -16,3 +16,23 @@ git checkout fe955961
 `webpack, babel и куча других зависимостей`
 
 Folder Structure - https://create-react-app.dev/docs/folder-structure
+
+
+Компонентный подход - `приложение состоит из компонентов вложенных друг в друга`
+
+Компоненты - `блоки из которых состоит приложение`. Dev tools
+
+App.js - `наш первый компонет`
+
+Virtual DOM - `библиотека react-dom создаёт в памяти виртуальный DOM, JS объект который работает намного быстрее реального,
+производит различные вычисления и перерисовки и затем обновляет реальный DOM.
+VDOM - киллер-фича реакта`
+
+git checkout 77b7f59b
+
+Install Prettier ans eslint
+
+https://eslint.org/docs/user-guide/getting-started
+
+https://prettier.io/docs/en/install.html
+
