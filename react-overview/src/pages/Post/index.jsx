@@ -1,13 +1,13 @@
 import React from 'react';
 import PageWrapper from '../../containers/PageWrapper';
-import { Posts } from './containers/Posts';
+import { Post } from './containers/Post';
 
-export const PostsPage = () => {
-  console.log('Posts PAGE component render');
+export const PostPage = () => {
+  console.log('Post PAGE component render');
 
   return (
     <PageWrapper>
-      <Posts />
+      <Post />
     </PageWrapper>
   );
 };
