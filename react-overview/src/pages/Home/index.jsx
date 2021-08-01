@@ -1,13 +1,20 @@
 import React from 'react';
 import styles from './styles.module.sass';
-import PageWrapper from '../../containers/PageWrapper';
+import PropTypes from 'prop-types';
+import { ComponentsA } from './components/ComponentA';
+import { Chart } from '../../components/Chart';
 
-export const HomePage = () => {
+export const HomePage = ({ user }) => {
   console.log('Home component render');
-
   return (
-    <PageWrapper>
-      <div className={styles.home}>Home component</div>
-    </PageWrapper>
+    <div className={styles.home}>
+      Home component
+      <ComponentsA user={user} />
+      <Chart />
+    </div>
   );
+};
+
+HomePage.propTypes = {
+  user: PropTypes.string,
 };

@@ -1,3 +1,24 @@
+1. Поднятие состояния и пробрасывание пропсов, пропс дриллинг, props и state only
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 git checkout fe955961
 
  TS template - `yarn create react-app my-app --template typescript`
