@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const Chart = () => {
   console.log('Chart component render');
-  // const [aggregatedData, setAggregatedData] = useState('');
+  const [aggregatedData, setAggregatedData] = useState('');
 
   //check performance
   const onAggregateSomeData = () => {
@@ -22,13 +22,11 @@ const Chart = () => {
     return aggregatedData;
   };
 
-  //Hooks are async and dont block render
-  // useEffect(() => {
-  //   const aggregatedData = onAggregateSomeData();
-  //   setAggregatedData(aggregatedData);
-  // }, []);
-  // This approach will block render
-  const aggregatedData = onAggregateSomeData();
+  //Hooks are async and don't block render
+  useEffect(() => {
+    const aggregatedData = onAggregateSomeData();
+    setAggregatedData(aggregatedData);
+  }, []);
 
   return (
     <div className={styles.chart}>
