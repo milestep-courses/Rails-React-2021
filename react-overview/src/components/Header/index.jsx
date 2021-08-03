@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import styles from './styles.module.sass';
+import { useAuth } from '../../context/AuthContext';
 
-export const Header = ({ user, setUser }) => {
+export const Header = () => {
   const [name, setName] = useState('');
+  //get login function from our custom hook
+  const { login } = useAuth();
+
   console.log('Header component render');
 
   const onSubmit = (event) => {
     console.log('Submit form');
     event.preventDefault();
-    setUser(name);
+    login(name);
   };
 
   const onChangeName = ({ currentTarget: { value } }) => setName(value);
@@ -27,9 +30,4 @@ export const Header = ({ user, setUser }) => {
       </div>
     </div>
   );
-};
-
-Header.propTypes = {
-  user: PropTypes.string,
-  setUser: PropTypes.func,
 };

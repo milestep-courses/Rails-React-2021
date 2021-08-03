@@ -1,20 +1,15 @@
 import React from 'react';
 import styles from './styles.module.sass';
-import PropTypes from 'prop-types';
 import { ComponentsA } from './components/ComponentA';
 import Chart from '../../components/Chart';
 
-export const HomePage = ({ user }) => {
+export const HomePage = () => {
   console.log('Home component render');
   return (
     <div className={styles.home}>
       Home component
-      <ComponentsA user={user} />
+      <ComponentsA />
       <Chart />
     </div>
   );
-};
-
-HomePage.propTypes = {
-  user: PropTypes.string,
 };

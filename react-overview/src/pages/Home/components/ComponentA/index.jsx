@@ -1,18 +1,12 @@
 import React from 'react';
 import styles from '../../styles.module.sass';
-import PropTypes from 'prop-types';
 import { ComponentsB } from '../ComponentB';
 
-export const ComponentsA = ({ user }) => {
+export const ComponentsA = () => {
   console.log('ComponentsA component render');
   return (
     <div className={styles.home__section}>
-      Component A
-      <ComponentsB user={user} />
+      Component A<ComponentsB />
     </div>
   );
-};
-
-ComponentsA.propTypes = {
-  user: PropTypes.string,
 };
