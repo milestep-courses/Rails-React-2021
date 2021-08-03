@@ -19,8 +19,8 @@ const App = () => {
         <AuthProvider>
           <Header />
           <Routing />
+          <Footer />
         </AuthProvider>
-        <Footer />
       </ErrorBoundary>
     </BrowserRouter>
   );
