@@ -5,7 +5,7 @@ const initialSate = {
   isAuthorized: false,
 };
 
-function userReducer(state = initialSate, action) {
+const userReducer = (state = initialSate, action) => {
   switch (action.type) {
     case userTypes.USER_AUTH_FETCH:
       return {
@@ -35,6 +35,6 @@ function userReducer(state = initialSate, action) {
     default:
       return state;
   }
-}
+};
 
 export default userReducer;
