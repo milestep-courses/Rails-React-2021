@@ -1,6 +1,6 @@
 import React, { useContext, useState, useCallback, useEffect } from 'react';
 import PropTypes from 'prop-types';
-let x;
+
 // Our Context object
 const AuthContext = React.createContext();
 
@@ -23,13 +23,6 @@ export const AuthProvider = ({ children }) => {
   // prevent creation function after rerender
   const increment = useCallback(() => {
     incrementVal((prev) => prev + 1);
-  }, []);
-
-  console.log(increment === x);
-
-  useEffect(() => {
-    x = increment;
-    // x = login;
   }, []);
 
   // Object that we pass through context

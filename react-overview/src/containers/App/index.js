@@ -5,6 +5,8 @@ import { ErrorBoundary } from '../ErrorBoundary';
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
 import { AuthProvider } from '../../context/AuthContext';
+import { StoreProvider } from '../../store';
+import { Auth } from '../Auth';
 
 //Providers(Context)
 //Routing
@@ -15,13 +17,17 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <ErrorBoundary>
-        <AuthProvider>
-          <Header />
-          <Routing />
-          <Footer />
-        </AuthProvider>
-      </ErrorBoundary>
+      <StoreProvider>
+        <Auth>
+          <ErrorBoundary>
+            <AuthProvider>
+              <Header />
+              <Routing />
+              <Footer />
+            </AuthProvider>
+          </ErrorBoundary>
+        </Auth>
+      </StoreProvider>
     </BrowserRouter>
   );
 };

@@ -1,23 +1,15 @@
+- http://localhost:3000/posts  - не используйте стор если эти данные нужны только на одной странице и не имеют отношения к другим страницам
+- или вы можете обойтись локалстореджом, стейтом, контекстом.
+
+стор отлично подойдёт для сложных  UA, search
+
+https://react-redux.js.org/introduction/getting-started
+https://github.com/tayiorbeii/egghead.io_redux_course_notes
+https://redux.js.org/introduction/learning-resources
+https://reactjsexample.com/tag/todo/
+*******************************************************************
 1. Поднятие состояния и пробрасывание пропсов, пропс дриллинг, props и state only
 2. Блокировка рендера
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 git checkout fe955961
 
